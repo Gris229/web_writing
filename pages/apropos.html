@@ -1,62 +1,104 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Redaction Web</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@2/css/all.min.css">
-    <link rel="stylesheet" href="index.css.">
-    <link rel="stylesheet" href="../css/mystyles.css">
-  </head>
-  <body>
 
-    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redaction Web</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@2/css/all.min.css">
+  <link rel="stylesheet" href="index.css.">
+  <link rel="stylesheet" href="../css/mystyles.css">
+</head>
+
+<body>
+
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="../index.html">
+          Accueil
+        </a>
+
+        <a class="navbar-item" href="apropos.html">
+          A propos
+        </a>
+
+        <a class="navbar-item" href="mes_briefs.html">
+          Mes Briefs
+        </a>
+
+        <a class="navbar-item is-medium is-github">
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
+        </a>
+
+        <a class="navbar-item is-medium is-discord">
+          <span class="icon">
+            <i class="fab fa-discord"></i>
+          </span>
+        </a>
+
+        <a class="navbar-item is-medium is-whatsapp">
+          <span class="icon">
+            <i class="fab fa-whatsapp"></i>
+          </span>
+        </a>
+      </div>
+  </nav>
+
+  <section class="hero is-medium is-link has-text-centered">
+    <div class="hero-body">
+      <p class="title">A PROPOS</p><br><br>
+    </div>
+  </section>
+
+  <section class="has-background-light">
+    <div class="columns">
+      <div class="column is-5">
+        <figure class="image is-550x550">
+          <img src="../images/img2.jpg">
+        </figure><br><br>
+      </div>
+      <div class="column my-auto">
+        <div class="notification">
+          <p class="subtitle has-text-centered">
+            Je suis diplômé d'un bacalauréat Electrotechnique et d'un diplôme de 
+            technicien en Electricité. Ma passion pour l'informatique m'amène à faire
+            une reconversion et à me lancer dans le monde de la programmation et le web.<br>
+            Je suis developpeur frontend et rédacteur web à mes heures perdus<br><br>
+            Gehunel Gbedji 23 ans | Cotonou
+          </p>
         </div>
-      
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item" href="index.html">
-                Accueil
-            </a>
+      </div>
+    </div>
+  </section>
 
-            <a class="navbar-item" href="apropos.html">
-              A propos
-            </a>
-      
-            <a class="navbar-item" href="mes_briefs.html">
-              Mes Briefs
-            </a>
+  <script>
 
-            <a class="navbar-item is-medium is-github">
-                <span class="icon">
-                    <i class="fab fa-github"></i>
-                </span>  
-            </a>
+    $(document).ready(function () {
 
-            <a class="navbar-item is-medium is-discord">
-                <span class="icon">
-                    <i class="fab fa-discord"></i>
-                </span>  
-            </a>   
-            
-            <a class="navbar-item is-medium is-whatsapp">
-                <span class="icon">
-                    <i class="fab fa-whatsapp"></i>
-                </span>  
-            </a>
-        </div>
-      </nav>
+      // Check for click events on the navbar burger icon
+      $(".navbar-burger").click(function () {
 
-    
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        $(".navbar-burger").toggleClass("is-active");
+        $(".navbar-menu").toggleClass("is-active");
 
+      });
+    });
 
-  </body>
+  </script>
+
+</body>
 
 </html>
